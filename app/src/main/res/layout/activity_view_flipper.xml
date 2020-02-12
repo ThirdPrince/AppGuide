@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:flipInterval="500"
+        android:persistentDrawingCache="animation"
+        >
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/guide_01"
+            />
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/guide_02"
+            />
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/guide_03"
+            />
+
+    </ViewFlipper>
+    <LinearLayout
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"/>
+</FrameLayout>
